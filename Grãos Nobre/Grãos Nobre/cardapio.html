@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cardápio do Grão-Nobre</title>
+    <link rel="stylesheet" href="cafe.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: url(fundinho.jpg) no-repeat center center/cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      header.topo {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        text-align: center;
+        padding: 20px;
+      }
+
+      header.topo h1 {
+        color: #fff;
+        margin: 0;
+      }
+
+      main {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+
+      #cardapio {
+        background: rgba(255, 255, 255, 0.9);
+        text-align: center;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+        max-width: 600px;
+        margin: 40px 20px;
+      }
+
+      #cardapio h2 {
+        color: #6b4226;
+        margin-bottom: 20px;
+      }
+
+      #cardapio img {
+        max-width: 100%;
+        border-radius: 12px;
+        margin-top: 20px;
+      }
+
+      .botao-voltar {
+        margin: 20px 0;
+      }
+
+      .botao-voltar a {
+        display: inline-block;
+        padding: 10px 20px;
+        background: #6b4226;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 8px;
+        transition: background 0.3s;
+      }
+
+      .botao-voltar a:hover {
+        background: #a0522d;
+      }
+
+      footer {
+        width: 100%;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 15px 0;
+      }
+
+      .botao_pedido {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: #6b4226;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      .botao_pedido:hover {
+        background: #a0522d;
+      }
+
+      #lista-sugestoes {
+        margin-top: 15px;
+        padding-left: 0;
+        list-style-type: none;
+        text-align: center;
+        color: black;
+      }
+
+      h3 {
+        color:black;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topo">
+      <h1>📖 Cardápio Grão-Nobre</h1>
+    </header>
+
+    <main>
+      <section id="cardapio">
+        <h2>Nosso Cardápio</h2>
+        <ul id="lista-cardapio"></ul>
+        <img src="Menu Cardápio Cafeteria Café Moderno Marrom.png" alt="Cardápio" />
+        <button class="botao_pedido" onclick="fazerPedido()">🛒 Fazer Pedido</button>
+        <h3>Faça seu Pedido!</h3>
+        <ul id="lista_pedidos"></ul>
+      </section>
+    </main>
+
+    <div class="botao-voltar">
+      <a href="cafe.html">⬅ Voltar para o Início</a>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Grão-Nobre - todos os direitos reservados</p>
+    </footer>
+
+    <script src="cardapio.js"></script>
+  </body>
+</html>

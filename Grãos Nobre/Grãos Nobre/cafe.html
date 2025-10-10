@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grão Nobre</title>
+    <link rel="stylesheet" href="cafe.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f5f2;
+            color: #333;
+        }
+
+        .topo {
+            background: #6b4226;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .logo {
+            width: 60px;
+            border-radius: 50%;
+        }
+
+        #logo-nome {
+            color: #fff;
+            font-size: 1.8em;
+            margin: 0;
+        }
+
+        .navegacao {
+            background: #8b5a2b;
+            padding: 10px 0;
+        }
+
+        .navegacao ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .navegacao a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .navegacao a:hover {
+            color: #ffd700;
+        }
+
+        .banner {
+            background: url(fundo1.jpg) no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+        }
+
+        .banner h2 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .banner p {
+            font-size: 1.2em;
+        }
+
+        /* Destaque Cardápio */
+        #destaque-cardapio {
+            text-align: center;
+            padding: 50px 20px;
+            background: #fff;
+        }
+
+        #destaque-cardapio h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #6b4226;
+        }
+
+        #destaque-cardapio p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        #destaque-cardapio a {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #6b4226;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        #destaque-cardapio a:hover {
+            background: #a0522d;
+        }
+
+        /* Rodapé */
+        footer {
+            background: #6b4226;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="topo">
+        <div class="logo-container">
+            <img src="cafe.jpeg" alt="Logo Grão Nobre" class="logo">
+            <h1 id="logo-nome">Grão-Nobre</h1>
+        </div>
+    </header>
+
+    <nav class="navegacao">
+        <ul>
+            <li><a href="cafe.html">Início</a></li>
+            <li><a href="novidades.html">Novidades</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="banner">
+            <h2>Bem-Vindo</h2>
+            <p>O melhor café da cidade, feito especialmente para você</p>
+        </section>
+
+        <section id="destaque-cardapio">
+            <h2>☕ Conheça Nosso Cardápio ☕</h2>
+            <p>Uma seleção especial de cafés, bolos e delícias feitas para você.</p>
+            <a href="cardapio.html">Ver Cardápio Completo</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Grão-Nobre - todos os direitos reservados</p>
+    </footer>
+
+    <script src="cafe.js"></script>
+</body>
+</html>

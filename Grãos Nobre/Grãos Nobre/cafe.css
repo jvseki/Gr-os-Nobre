@@ -1,0 +1,124 @@
+body {
+    background: linear-gradient(rgba(78, 52, 46, 0.7), rgba(78, 52, 46, 0.7)),
+    url(fundo-de-cafe-desenhado-a-mao_23-2150849907.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white; 
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 40px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(246, 246, 246, 0.5);
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+#logo-nome {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.2rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+.navegacao ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 10px 40px;
+    margin: 0;
+}
+
+.navegacao ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.navegacao ul li a:hover {
+    color: #f0c080;
+}
+
+.banner {
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+.banner-img {
+    display: block;
+    margin: 20px auto 0;
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#cardapio {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#cardapio h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#lista-cardapio li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: white;
+}
+
+#lista-cardapio li img {
+    width: 80px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.botao-voltar a {
+ display: inline-block;
+ padding: 15px 40px; background-color: white;
+
+ color: #4e344e;
+ text-decoration: none;
+ font-weight: bold;
+ font-size: 1.3rem;
+ border-radius: 10px;
+ box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+ transition: transform 0.3s, background-color 0.3s;
+}
+
+.botao-voltar a:hover { background-color: #f5f0e6;  transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+}
+
